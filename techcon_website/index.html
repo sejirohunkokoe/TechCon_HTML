@@ -8,9 +8,10 @@
 
     <!-- Header: Contains the conference name and primary navigation -->
     <header>
+        <!-- H1: Emphasizes the conference name -->
         <h1>TechCon 2024</h1>
         
-        <!-- Navigation Bar: Links to the main pages of the website -->
+        <!-- Navigation Bar: Links to the main pages -->
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
@@ -21,32 +22,29 @@
         </nav>
     </header>
 
-    <!-- Main Section: Defines the dominant content of the page -->
+    <!-- Main Section: Defines the dominant content of the webpage -->
     <main>
         
-        <!-- Section: Introduces the conference and hosts the promotional video -->
+        <!-- Section: Introduces the conference -->
         <section id="introduction">
-            <h2>Welcome to TechCon 2024</h2>
+            <h2>Introduction</h2>
             
+            <!-- Brief paragraph describing the event -->
             <p>
-                Join us for TechCon 2024, the premier annual event bringing together innovators, developers, and industry leaders to discuss the next generation of technology. This year, our focus is on sustainable AI, quantum computing, and decentralized finance. Don't miss out on insightful keynotes and hands-on workshops!
+                Join us for TechCon 2024, the premier annual event dedicated to exploring the convergence of emerging technologies. This year's focus includes sustainable AI, advanced cloud architecture, and the ethical considerations of digital transformation. It's the essential gathering for innovators and industry professionals.
             </p>
 
-            <!-- Embedded Promotional Video (Accessible Design) -->
-            <figure>
-                <!-- 
-                    The <video> tag includes the 'controls' attribute for playback controls.
-                    We use a placeholder source and include a <track> element for accessibility 
-                    (subtitles/captions), which is mandatory for accessible video content. 
-                -->
-                <h3>Promotional Video</h3>
+            <!-- Embedded Promotional Video (Accessible with controls and subtitles) -->
+            <h3>Promotional Video</h3>
+            
+                <!-- The <video> tag includes the 'controls' attribute for user playback control -->
                 <video controls width="640" height="360">
                     <!-- Placeholder video source -->
-                    <source src="videos/techcon_promo.mp4" type="video/mp4">
+                    <source src="media/techcon_promo.mp4" type="video/mp4">
                     
                     <!-- 
-                        Accessibility Track: Provides subtitles, captions, or descriptions.
-                        For a real site, 'captions.vtt' would contain timed text.
+                        Accessibility Requirement: <track> provides subtitles/captions.
+                        This is critical for video accessibility.
                     -->
                     <track 
                         label="English Captions" 
@@ -56,17 +54,17 @@
                         default
                     >
                     
-                    <!-- Fallback content for browsers that do not support the video tag -->
-                    Sorry, your browser doesn't support embedded videos. You can download the video <a href="videos/techcon_promo.mp4">here</a>.
+                    <!-- Fallback content -->
+                    Your browser does not support the video tag. Please download the video <a href="media/techcon_promo.mp4">here</a>.
                 </video>
-                <figcaption>A short promotional video highlighting the key themes and speakers for TechCon 2024.</figcaption>
-            </figure>
+    
         </section>
 
     </main>
 
-    <!-- Footer: Contains copyright and legal information -->
+    <!-- Footer: Contains copyright information -->
     <footer>
+        <!-- Copyright text explicitly included -->
         <p>copyright &copy; 2024 TechCon Conference. All rights reserved.</p>
     </footer>
 
