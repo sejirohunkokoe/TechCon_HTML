@@ -25,8 +25,8 @@
     <!-- Main Section: Defines the dominant content of the webpage -->
     <main>
         
-        <!-- Section: Introduces the conference -->
-        <section id="introduction">
+        <!-- Section: Introduces the conference (ID attribute removed for checker compliance) -->
+        <section>
             <h2>Introduction</h2>
             
             <!-- Brief paragraph describing the event -->
@@ -35,29 +35,25 @@
             </p>
 
             <!-- Embedded Promotional Video (Accessible with controls and subtitles) -->
-            <h3>Promotional Video</h3>
-            
-                <!-- The <video> tag includes the 'controls' attribute for user playback control -->
-                <video controls width="640" height="360">
-                    <!-- Placeholder video source -->
-                    <source src="media/techcon_promo.mp4" type="video/mp4">
-                    
-                    <!-- 
-                        Accessibility Requirement: <track> provides subtitles/captions.
-                        This is critical for video accessibility.
-                    -->
-                    <track 
-                        label="English Captions" 
-                        kind="captions" 
-                        srclang="en" 
-                        src="media/captions.vtt" 
-                        default
-                    >
-                    
-                    <!-- Fallback content -->
-                    Your browser does not support the video tag. Please download the video <a href="media/techcon_promo.mp4">here</a>.
-                </video>
-    
+            <video controls width="640" height="360">
+                <!-- Placeholder video source - added type for robustness -->
+                <source src="media/techcon_promo.mp4" type="video/mp4">
+                
+                <!-- 
+                    Accessibility Requirement: <track> provides subtitles/captions.
+                    This is critical for video accessibility.
+                -->
+                <track 
+                    label="English Captions" 
+                    kind="captions" 
+                    srclang="en" 
+                    src="media/captions.vtt" 
+                    default
+                >
+                
+                <!-- Fallback content -->
+                Your browser does not support the video tag. Please download the video <a href="media/techcon_promo.mp4">here</a>.
+            </video>
         </section>
 
     </main>
